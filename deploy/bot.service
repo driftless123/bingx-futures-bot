@@ -1,0 +1,16 @@
+[Unit]
+Description=BingX Trading Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/bingx_trading_bot
+ExecStart=/home/ubuntu/bingx_trading_bot/venv/bin/python /home/ubuntu/bingx_trading_bot/main.py
+Restart=always
+RestartSec=10
+# Лог systemd: journalctl -u bot -f
+
+[Install]
+WantedBy=multi-user.target
