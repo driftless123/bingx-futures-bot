@@ -22,6 +22,10 @@ Automated trading system for crypto futures on BingX. Runs multiple strategies i
 
 Python, asyncio, BingX API (REST/WebSocket), pandas, python-telegram-bot. Deployed on a Linux VPS with systemd.
 
+## Configuration
+
+Copy `config.example.py` to `config.py` and fill in your own API keys and strategy parameters. `config.py` is git-ignored and never committed.
+
 ## Status
 
 Live, in production. Strategy parameters and coin list are tuned through ongoing backtesting.
